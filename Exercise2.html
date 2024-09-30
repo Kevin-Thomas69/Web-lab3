@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Check Browser Online Status</title>
+</head>
+<body>
+    <script>
+        function checkOnlineStatus() {
+            if (navigator.onLine) {
+                document.getElementById('status').innerHTML = 'Browser is online.';
+            } else {
+                document.getElementById('status').innerHTML = 'Browser is offline.';
+            }
+        }
+        checkOnlineStatus();
+        window.addEventListener('online',  function() { checkOnlineStatus(); });
+        window.addEventListener('offline', function() { checkOnlineStatus(); });
+    </script>
+    <p id="status">Checking browser online status...</p>
+</body>
+</html>

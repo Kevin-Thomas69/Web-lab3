@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Random Integer Generator</title>
+    <script src="randominteger.js"></script>
+</head>
+<body>
+    <h1>Random Integer Generator</h1>
+    <p id="randomNumberDisplay"></p>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+        let randomNum = randomInt();
+        document.getElementById('randomNumberDisplay').textContent = 'Random Integer: ' + randomNum;
+        });
+    </script>
+</body>
+</html>
